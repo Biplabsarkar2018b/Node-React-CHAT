@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import io from "socket.io-client";
 
-const socket = io.connect("http://localhost:3000");
+const socket = io.connect("https://node-react-chat.vercel.app/");
 
 const ChatPage = () => {
   const [selectedUser, setSelectedUser] = useState(null);
